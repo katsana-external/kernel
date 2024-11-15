@@ -29,9 +29,9 @@
   "require": {
     "php": "^8.0",
     "laravie/query-filter": "3.x-dev",
-    "orchestra/contracts": "^7.0",
-    "orchestra/notifier": "^7.0",
-    "orchestra/support": "^7.0"
+    "orchestra/contracts": "^7.x-dev",
+    "orchestra/notifier": "^7.x-dev",
+    "orchestra/support": "^7.x-dev"
   },
   "require-dev": {
     "hashids/hashids": "^1.0",
@@ -62,5 +62,23 @@
   "config": {
     "sort-packages": true
   },
-  "minimum-stability": "dev"
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/contracts"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/notifier"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/support"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/memory"
+    }
+  ]
 }
